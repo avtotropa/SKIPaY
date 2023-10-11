@@ -24,7 +24,7 @@
 ***
 ### Запуск Docker проекта
     git clone https://github.com/avtotropa/SKIPaY.git
-    cd skiPay
+    cd SKIPaY
     poetry install
     vi .env
     docker run -d --name redis -p 6379:6379 redis:7.0.5-alpine
