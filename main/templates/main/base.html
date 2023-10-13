@@ -20,13 +20,13 @@
                             <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page"
                                href="{% url 'main:main' %}">
                                 <img class="icon" width="25" height="25" src="{% static 'home.png' %}" alt="skiPay">
-                                Панель
+                                <button class="menu-btn">Панель</button>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2" href="{% url 'posts:posts' %}">
                                 <img class="icon" width="25" height="25" src="{% static 'node.png' %}" alt="skiPay">
-                                Публикации
+                                <button class="menu-btn">Публикации</button>
                             </a>
                         </li>
                         <hr class="my-3">
@@ -45,7 +45,7 @@
                                        href="{% url 'subscriptions:list' %}">
                                         <img class="icon" width="25" height="25"
                                              src="{% static 'pay_publications.png' %}" alt="skiPay">
-                                        Купленные подписки <br> Оплаты
+                                        <button class="menu-btn">Купленные подписки</button> <br> <button class="menu-btn">Оплаты</button>
                                     </a>
                                 </li>
                             {% endif %}
@@ -53,7 +53,7 @@
                                 <a class="nav-link d-flex align-items-center gap-2" href="{% url 'users:profile' %}">
                                     <img class="icon" width="25" height="25" src="{% static 'edit_profile.png' %}"
                                          alt="skiPay">
-                                    Редактирование профиля
+                                    <button class="menu-btn">Редактирование профиля</button>
                                 </a>
                             </li>
                             <li class="nav-item">

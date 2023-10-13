@@ -46,3 +46,36 @@
 .navbar .form-control {
   padding: .75rem 1rem;
 }
+
+/* Voluminous Button Styles */
+.btn-voluminous {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-voluminous:hover {
+    background-color: #0056b3;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.4);
+    transform: translateY(-2px);
+}
+
+.btn-voluminous:active {
+    background-color: #00408d;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
+    transform: translateY(2px);
+}
+
+/* Menu Button Styles */
+.menu-btn {
+    transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}

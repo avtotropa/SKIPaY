@@ -3,7 +3,7 @@
 {% block content %}
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <div class="pt-3 border-bottom">
-            <h2>Публикации</h2>
+            <h2><button class="menu-btn">Публикации</button></h2>
         </div>
         <div class="row row-cols-1 row-cols-md-3 g-4 h-auto card-group">
             {% for blog in blogs %}
@@ -29,11 +29,11 @@
                         <div class="card-footer  d-grid gap-2 d-md-flex justify-content-md-start">
                             {% if blog.paid_published %}
                                     <a href="{% url 'posts:pay_posts_redirect' blog.pk %}" class="btn btn-outline-primary">
-                                Купить
+                                <button class="btn-voluminous">Купить</button>
                             </a>
                                 {% else %}
                                     <a href="{% url 'posts:posts_detail' blog.pk %}" class="btn btn-outline-success">
-                                Прочитать
+                                <button class="btn-voluminous">Прочитать</button>
                             </a>
                                 {% endif %}
 
